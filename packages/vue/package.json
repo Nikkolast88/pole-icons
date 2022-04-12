@@ -1,0 +1,54 @@
+{
+  "name": "@pole/icons-vue",
+  "version": "0.0.1",
+  "description": "Vue components of Element Plus Icons collection.",
+  "keywords": [
+    "icon",
+    "svg",
+    "vue",
+    "pole"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "directory": "packages/vue"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.mjs",
+  "types": "dist/types",
+  "unpkg": "dist/index.iife.min.js",
+  "jsdelivr": "dist/index.iife.min.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "pnpm run build:generate && pnpm run build:build && pnpm run build:types",
+    "build:generate": "esno build/generate.ts",
+    "build:build": "esno build/build.ts",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@pole/icons-svg": "^1.1.4",
+    "@types/fs-extra": "^9.0.13",
+    "@types/prettier": "^2.4.4",
+    "camelcase": "^6.3.0",
+    "chalk": "^5.0.1",
+    "consola": "^2.15.3",
+    "esbuild": "^0.14.30",
+    "esno": "^0.14.1",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.0.1",
+    "local-pkg": "^0.4.1",
+    "prettier": "^2.6.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-esbuild": "^4.8.2",
+    "typescript": "^4.6.3",
+    "unplugin-vue": "^2.0.0",
+    "vue": "^3.2.31",
+    "vue-tsc": "^0.33.9"
+  }
+}

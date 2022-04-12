@@ -1,0 +1,24 @@
+{
+  "name": "@pole/icons-svg",
+  "version": "0.0.1",
+  "description": "SVG icon for Element Plus Icons collection.",
+  "keywords": [
+    "icon",
+    "svg",
+    "pole"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "directory": "packages/svg"
+  },
+  "files": [
+    "*.svg"
+  ],
+  "scripts": {
+    "optimize": "svgo -f . -o ."
+  },
+  "devDependencies": {
+    "svgo": "^2.8.0"
+  }
+}
